@@ -19,6 +19,7 @@ export default {
   home: 'ホーム',
   identical: '似ている',
   infringe: '侵害する',
+  notInfringe: '侵害している',
   infringeQuestion: 'BがAの著作権を侵害していると思いますか？',
   likeness: '好み',
   lyrics: '歌詞',
