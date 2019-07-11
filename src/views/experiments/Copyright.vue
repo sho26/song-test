@@ -36,9 +36,13 @@
         el-radio(v-model="similarity" :label="100")
           | {{ $t('similar4') }}
       el-form-item(:label="$t('infringeQuestion')")
-        el-switch(v-model="infringe", :active-text="$t('infringe')", :inactive-text="$t('notInfringe')")
+        el-radio(v-model="similarity" :label="0")
+          | {{ $t('infringe') }}
+        el-radio(v-model="similarity" :label="100")
+          | {{ $t('notInfringe') }}        
+       //el-switch(v-model="infringe", :active-text="$t('infringe')", :inactive-text="$t('notInfringe')")
       el-form-item
-        el-button(type="primary", @click="onSubmit")
+       el-button(type="primary", @click="onSubmit")
           | {{ $t('submit') }}
   h2.finish(v-if="stage === 3")
     | {{ $t('experimentFinished') }}
